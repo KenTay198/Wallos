@@ -10,6 +10,6 @@ services:
       HOST: 0.0.0.0
     # Volumes store your data between container upgrades
     volumes:
-      - './db:/var/www/html/db'
+      - '/var/lib/wallos/db:/var/www/html/db'
       - './logos:/var/www/html/images/uploads/logos'
     restart: unless-stopped
